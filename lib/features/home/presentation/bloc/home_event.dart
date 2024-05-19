@@ -5,4 +5,5 @@ class HomeEvent with _$HomeEvent {
   const factory HomeEvent.started() = _Started;
   const factory HomeEvent.getImages() = _GetImages;
   const factory HomeEvent.likeImage(String id) = _LikeImage;
+  const factory HomeEvent.searchImage(String query) = _SearchImage;
 }

@@ -33,6 +33,15 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
             );
           });
         },
+        searchImage: (String query) async {
+          emit(const HomeState.loading());
+          final response = await controller.searchImage(query);
+          response.fold((l) => emit(HomeState.getImageError(l)), (data) {
+            emit(
+              HomeState.searchImageSuccess(data),
+            );
+          });
+        },
       );
     });
   }

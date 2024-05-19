@@ -6,6 +6,7 @@ import '../repository/i_home_repository.dart';
 abstract class IHomeController {
   Future<Either<String, ImageModel>> getImages();
   Future<Either<String, String>> likeImage(String id);
+  Future<Either<String, ImageModel>> searchImage(String query);
 }
 
 class HomeController extends IHomeController {
@@ -21,5 +22,10 @@ class HomeController extends IHomeController {
   @override
   Future<Either<String, String>> likeImage(String id) {
     return homeRepository.likeImage(id);
+  }
+
+  @override
+  Future<Either<String, ImageModel>> searchImage(String query) {
+    return homeRepository.searchImage(query);
   }
 }

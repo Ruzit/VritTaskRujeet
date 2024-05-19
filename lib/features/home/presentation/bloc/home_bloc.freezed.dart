@@ -21,6 +21,7 @@ mixin _$HomeEvent {
     required TResult Function() started,
     required TResult Function() getImages,
     required TResult Function(String id) likeImage,
+    required TResult Function(String query) searchImage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +29,7 @@ mixin _$HomeEvent {
     TResult? Function()? started,
     TResult? Function()? getImages,
     TResult? Function(String id)? likeImage,
+    TResult? Function(String query)? searchImage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +37,7 @@ mixin _$HomeEvent {
     TResult Function()? started,
     TResult Function()? getImages,
     TResult Function(String id)? likeImage,
+    TResult Function(String query)? searchImage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +46,7 @@ mixin _$HomeEvent {
     required TResult Function(_Started value) started,
     required TResult Function(_GetImages value) getImages,
     required TResult Function(_LikeImage value) likeImage,
+    required TResult Function(_SearchImage value) searchImage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +54,7 @@ mixin _$HomeEvent {
     TResult? Function(_Started value)? started,
     TResult? Function(_GetImages value)? getImages,
     TResult? Function(_LikeImage value)? likeImage,
+    TResult? Function(_SearchImage value)? searchImage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +62,7 @@ mixin _$HomeEvent {
     TResult Function(_Started value)? started,
     TResult Function(_GetImages value)? getImages,
     TResult Function(_LikeImage value)? likeImage,
+    TResult Function(_SearchImage value)? searchImage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -120,6 +126,7 @@ class _$StartedImpl implements _Started {
     required TResult Function() started,
     required TResult Function() getImages,
     required TResult Function(String id) likeImage,
+    required TResult Function(String query) searchImage,
   }) {
     return started();
   }
@@ -130,6 +137,7 @@ class _$StartedImpl implements _Started {
     TResult? Function()? started,
     TResult? Function()? getImages,
     TResult? Function(String id)? likeImage,
+    TResult? Function(String query)? searchImage,
   }) {
     return started?.call();
   }
@@ -140,6 +148,7 @@ class _$StartedImpl implements _Started {
     TResult Function()? started,
     TResult Function()? getImages,
     TResult Function(String id)? likeImage,
+    TResult Function(String query)? searchImage,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -154,6 +163,7 @@ class _$StartedImpl implements _Started {
     required TResult Function(_Started value) started,
     required TResult Function(_GetImages value) getImages,
     required TResult Function(_LikeImage value) likeImage,
+    required TResult Function(_SearchImage value) searchImage,
   }) {
     return started(this);
   }
@@ -164,6 +174,7 @@ class _$StartedImpl implements _Started {
     TResult? Function(_Started value)? started,
     TResult? Function(_GetImages value)? getImages,
     TResult? Function(_LikeImage value)? likeImage,
+    TResult? Function(_SearchImage value)? searchImage,
   }) {
     return started?.call(this);
   }
@@ -174,6 +185,7 @@ class _$StartedImpl implements _Started {
     TResult Function(_Started value)? started,
     TResult Function(_GetImages value)? getImages,
     TResult Function(_LikeImage value)? likeImage,
+    TResult Function(_SearchImage value)? searchImage,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -228,6 +240,7 @@ class _$GetImagesImpl implements _GetImages {
     required TResult Function() started,
     required TResult Function() getImages,
     required TResult Function(String id) likeImage,
+    required TResult Function(String query) searchImage,
   }) {
     return getImages();
   }
@@ -238,6 +251,7 @@ class _$GetImagesImpl implements _GetImages {
     TResult? Function()? started,
     TResult? Function()? getImages,
     TResult? Function(String id)? likeImage,
+    TResult? Function(String query)? searchImage,
   }) {
     return getImages?.call();
   }
@@ -248,6 +262,7 @@ class _$GetImagesImpl implements _GetImages {
     TResult Function()? started,
     TResult Function()? getImages,
     TResult Function(String id)? likeImage,
+    TResult Function(String query)? searchImage,
     required TResult orElse(),
   }) {
     if (getImages != null) {
@@ -262,6 +277,7 @@ class _$GetImagesImpl implements _GetImages {
     required TResult Function(_Started value) started,
     required TResult Function(_GetImages value) getImages,
     required TResult Function(_LikeImage value) likeImage,
+    required TResult Function(_SearchImage value) searchImage,
   }) {
     return getImages(this);
   }
@@ -272,6 +288,7 @@ class _$GetImagesImpl implements _GetImages {
     TResult? Function(_Started value)? started,
     TResult? Function(_GetImages value)? getImages,
     TResult? Function(_LikeImage value)? likeImage,
+    TResult? Function(_SearchImage value)? searchImage,
   }) {
     return getImages?.call(this);
   }
@@ -282,6 +299,7 @@ class _$GetImagesImpl implements _GetImages {
     TResult Function(_Started value)? started,
     TResult Function(_GetImages value)? getImages,
     TResult Function(_LikeImage value)? likeImage,
+    TResult Function(_SearchImage value)? searchImage,
     required TResult orElse(),
   }) {
     if (getImages != null) {
@@ -362,6 +380,7 @@ class _$LikeImageImpl implements _LikeImage {
     required TResult Function() started,
     required TResult Function() getImages,
     required TResult Function(String id) likeImage,
+    required TResult Function(String query) searchImage,
   }) {
     return likeImage(id);
   }
@@ -372,6 +391,7 @@ class _$LikeImageImpl implements _LikeImage {
     TResult? Function()? started,
     TResult? Function()? getImages,
     TResult? Function(String id)? likeImage,
+    TResult? Function(String query)? searchImage,
   }) {
     return likeImage?.call(id);
   }
@@ -382,6 +402,7 @@ class _$LikeImageImpl implements _LikeImage {
     TResult Function()? started,
     TResult Function()? getImages,
     TResult Function(String id)? likeImage,
+    TResult Function(String query)? searchImage,
     required TResult orElse(),
   }) {
     if (likeImage != null) {
@@ -396,6 +417,7 @@ class _$LikeImageImpl implements _LikeImage {
     required TResult Function(_Started value) started,
     required TResult Function(_GetImages value) getImages,
     required TResult Function(_LikeImage value) likeImage,
+    required TResult Function(_SearchImage value) searchImage,
   }) {
     return likeImage(this);
   }
@@ -406,6 +428,7 @@ class _$LikeImageImpl implements _LikeImage {
     TResult? Function(_Started value)? started,
     TResult? Function(_GetImages value)? getImages,
     TResult? Function(_LikeImage value)? likeImage,
+    TResult? Function(_SearchImage value)? searchImage,
   }) {
     return likeImage?.call(this);
   }
@@ -416,6 +439,7 @@ class _$LikeImageImpl implements _LikeImage {
     TResult Function(_Started value)? started,
     TResult Function(_GetImages value)? getImages,
     TResult Function(_LikeImage value)? likeImage,
+    TResult Function(_SearchImage value)? searchImage,
     required TResult orElse(),
   }) {
     if (likeImage != null) {
@@ -435,6 +459,151 @@ abstract class _LikeImage implements HomeEvent {
 }
 
 /// @nodoc
+abstract class _$$SearchImageImplCopyWith<$Res> {
+  factory _$$SearchImageImplCopyWith(
+          _$SearchImageImpl value, $Res Function(_$SearchImageImpl) then) =
+      __$$SearchImageImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String query});
+}
+
+/// @nodoc
+class __$$SearchImageImplCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res, _$SearchImageImpl>
+    implements _$$SearchImageImplCopyWith<$Res> {
+  __$$SearchImageImplCopyWithImpl(
+      _$SearchImageImpl _value, $Res Function(_$SearchImageImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? query = null,
+  }) {
+    return _then(_$SearchImageImpl(
+      null == query
+          ? _value.query
+          : query // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SearchImageImpl implements _SearchImage {
+  const _$SearchImageImpl(this.query);
+
+  @override
+  final String query;
+
+  @override
+  String toString() {
+    return 'HomeEvent.searchImage(query: $query)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SearchImageImpl &&
+            (identical(other.query, query) || other.query == query));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, query);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SearchImageImplCopyWith<_$SearchImageImpl> get copyWith =>
+      __$$SearchImageImplCopyWithImpl<_$SearchImageImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function() getImages,
+    required TResult Function(String id) likeImage,
+    required TResult Function(String query) searchImage,
+  }) {
+    return searchImage(query);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
+    TResult? Function()? getImages,
+    TResult? Function(String id)? likeImage,
+    TResult? Function(String query)? searchImage,
+  }) {
+    return searchImage?.call(query);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function()? getImages,
+    TResult Function(String id)? likeImage,
+    TResult Function(String query)? searchImage,
+    required TResult orElse(),
+  }) {
+    if (searchImage != null) {
+      return searchImage(query);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_GetImages value) getImages,
+    required TResult Function(_LikeImage value) likeImage,
+    required TResult Function(_SearchImage value) searchImage,
+  }) {
+    return searchImage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Started value)? started,
+    TResult? Function(_GetImages value)? getImages,
+    TResult? Function(_LikeImage value)? likeImage,
+    TResult? Function(_SearchImage value)? searchImage,
+  }) {
+    return searchImage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_GetImages value)? getImages,
+    TResult Function(_LikeImage value)? likeImage,
+    TResult Function(_SearchImage value)? searchImage,
+    required TResult orElse(),
+  }) {
+    if (searchImage != null) {
+      return searchImage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SearchImage implements HomeEvent {
+  const factory _SearchImage(final String query) = _$SearchImageImpl;
+
+  String get query;
+  @JsonKey(ignore: true)
+  _$$SearchImageImplCopyWith<_$SearchImageImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
 mixin _$HomeState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
@@ -442,6 +611,7 @@ mixin _$HomeState {
     required TResult Function() loading,
     required TResult Function(ImageModel model) getImageSuccess,
     required TResult Function(String status) likeImageSuccess,
+    required TResult Function(ImageModel model) searchImageSuccess,
     required TResult Function(String msg) getImageError,
   }) =>
       throw _privateConstructorUsedError;
@@ -451,6 +621,7 @@ mixin _$HomeState {
     TResult? Function()? loading,
     TResult? Function(ImageModel model)? getImageSuccess,
     TResult? Function(String status)? likeImageSuccess,
+    TResult? Function(ImageModel model)? searchImageSuccess,
     TResult? Function(String msg)? getImageError,
   }) =>
       throw _privateConstructorUsedError;
@@ -460,6 +631,7 @@ mixin _$HomeState {
     TResult Function()? loading,
     TResult Function(ImageModel model)? getImageSuccess,
     TResult Function(String status)? likeImageSuccess,
+    TResult Function(ImageModel model)? searchImageSuccess,
     TResult Function(String msg)? getImageError,
     required TResult orElse(),
   }) =>
@@ -470,6 +642,7 @@ mixin _$HomeState {
     required TResult Function(_Loading value) loading,
     required TResult Function(_GetImageSuccess value) getImageSuccess,
     required TResult Function(_LikeImageSuccess value) likeImageSuccess,
+    required TResult Function(_SearchImageSuccess value) searchImageSuccess,
     required TResult Function(_GetImageError value) getImageError,
   }) =>
       throw _privateConstructorUsedError;
@@ -479,6 +652,7 @@ mixin _$HomeState {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_GetImageSuccess value)? getImageSuccess,
     TResult? Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult? Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult? Function(_GetImageError value)? getImageError,
   }) =>
       throw _privateConstructorUsedError;
@@ -488,6 +662,7 @@ mixin _$HomeState {
     TResult Function(_Loading value)? loading,
     TResult Function(_GetImageSuccess value)? getImageSuccess,
     TResult Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult Function(_GetImageError value)? getImageError,
     required TResult orElse(),
   }) =>
@@ -553,6 +728,7 @@ class _$InitialImpl implements _Initial {
     required TResult Function() loading,
     required TResult Function(ImageModel model) getImageSuccess,
     required TResult Function(String status) likeImageSuccess,
+    required TResult Function(ImageModel model) searchImageSuccess,
     required TResult Function(String msg) getImageError,
   }) {
     return initial();
@@ -565,6 +741,7 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? loading,
     TResult? Function(ImageModel model)? getImageSuccess,
     TResult? Function(String status)? likeImageSuccess,
+    TResult? Function(ImageModel model)? searchImageSuccess,
     TResult? Function(String msg)? getImageError,
   }) {
     return initial?.call();
@@ -577,6 +754,7 @@ class _$InitialImpl implements _Initial {
     TResult Function()? loading,
     TResult Function(ImageModel model)? getImageSuccess,
     TResult Function(String status)? likeImageSuccess,
+    TResult Function(ImageModel model)? searchImageSuccess,
     TResult Function(String msg)? getImageError,
     required TResult orElse(),
   }) {
@@ -593,6 +771,7 @@ class _$InitialImpl implements _Initial {
     required TResult Function(_Loading value) loading,
     required TResult Function(_GetImageSuccess value) getImageSuccess,
     required TResult Function(_LikeImageSuccess value) likeImageSuccess,
+    required TResult Function(_SearchImageSuccess value) searchImageSuccess,
     required TResult Function(_GetImageError value) getImageError,
   }) {
     return initial(this);
@@ -605,6 +784,7 @@ class _$InitialImpl implements _Initial {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_GetImageSuccess value)? getImageSuccess,
     TResult? Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult? Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult? Function(_GetImageError value)? getImageError,
   }) {
     return initial?.call(this);
@@ -617,6 +797,7 @@ class _$InitialImpl implements _Initial {
     TResult Function(_Loading value)? loading,
     TResult Function(_GetImageSuccess value)? getImageSuccess,
     TResult Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult Function(_GetImageError value)? getImageError,
     required TResult orElse(),
   }) {
@@ -673,6 +854,7 @@ class _$LoadingImpl implements _Loading {
     required TResult Function() loading,
     required TResult Function(ImageModel model) getImageSuccess,
     required TResult Function(String status) likeImageSuccess,
+    required TResult Function(ImageModel model) searchImageSuccess,
     required TResult Function(String msg) getImageError,
   }) {
     return loading();
@@ -685,6 +867,7 @@ class _$LoadingImpl implements _Loading {
     TResult? Function()? loading,
     TResult? Function(ImageModel model)? getImageSuccess,
     TResult? Function(String status)? likeImageSuccess,
+    TResult? Function(ImageModel model)? searchImageSuccess,
     TResult? Function(String msg)? getImageError,
   }) {
     return loading?.call();
@@ -697,6 +880,7 @@ class _$LoadingImpl implements _Loading {
     TResult Function()? loading,
     TResult Function(ImageModel model)? getImageSuccess,
     TResult Function(String status)? likeImageSuccess,
+    TResult Function(ImageModel model)? searchImageSuccess,
     TResult Function(String msg)? getImageError,
     required TResult orElse(),
   }) {
@@ -713,6 +897,7 @@ class _$LoadingImpl implements _Loading {
     required TResult Function(_Loading value) loading,
     required TResult Function(_GetImageSuccess value) getImageSuccess,
     required TResult Function(_LikeImageSuccess value) likeImageSuccess,
+    required TResult Function(_SearchImageSuccess value) searchImageSuccess,
     required TResult Function(_GetImageError value) getImageError,
   }) {
     return loading(this);
@@ -725,6 +910,7 @@ class _$LoadingImpl implements _Loading {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_GetImageSuccess value)? getImageSuccess,
     TResult? Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult? Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult? Function(_GetImageError value)? getImageError,
   }) {
     return loading?.call(this);
@@ -737,6 +923,7 @@ class _$LoadingImpl implements _Loading {
     TResult Function(_Loading value)? loading,
     TResult Function(_GetImageSuccess value)? getImageSuccess,
     TResult Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult Function(_GetImageError value)? getImageError,
     required TResult orElse(),
   }) {
@@ -820,6 +1007,7 @@ class _$GetImageSuccessImpl implements _GetImageSuccess {
     required TResult Function() loading,
     required TResult Function(ImageModel model) getImageSuccess,
     required TResult Function(String status) likeImageSuccess,
+    required TResult Function(ImageModel model) searchImageSuccess,
     required TResult Function(String msg) getImageError,
   }) {
     return getImageSuccess(model);
@@ -832,6 +1020,7 @@ class _$GetImageSuccessImpl implements _GetImageSuccess {
     TResult? Function()? loading,
     TResult? Function(ImageModel model)? getImageSuccess,
     TResult? Function(String status)? likeImageSuccess,
+    TResult? Function(ImageModel model)? searchImageSuccess,
     TResult? Function(String msg)? getImageError,
   }) {
     return getImageSuccess?.call(model);
@@ -844,6 +1033,7 @@ class _$GetImageSuccessImpl implements _GetImageSuccess {
     TResult Function()? loading,
     TResult Function(ImageModel model)? getImageSuccess,
     TResult Function(String status)? likeImageSuccess,
+    TResult Function(ImageModel model)? searchImageSuccess,
     TResult Function(String msg)? getImageError,
     required TResult orElse(),
   }) {
@@ -860,6 +1050,7 @@ class _$GetImageSuccessImpl implements _GetImageSuccess {
     required TResult Function(_Loading value) loading,
     required TResult Function(_GetImageSuccess value) getImageSuccess,
     required TResult Function(_LikeImageSuccess value) likeImageSuccess,
+    required TResult Function(_SearchImageSuccess value) searchImageSuccess,
     required TResult Function(_GetImageError value) getImageError,
   }) {
     return getImageSuccess(this);
@@ -872,6 +1063,7 @@ class _$GetImageSuccessImpl implements _GetImageSuccess {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_GetImageSuccess value)? getImageSuccess,
     TResult? Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult? Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult? Function(_GetImageError value)? getImageError,
   }) {
     return getImageSuccess?.call(this);
@@ -884,6 +1076,7 @@ class _$GetImageSuccessImpl implements _GetImageSuccess {
     TResult Function(_Loading value)? loading,
     TResult Function(_GetImageSuccess value)? getImageSuccess,
     TResult Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult Function(_GetImageError value)? getImageError,
     required TResult orElse(),
   }) {
@@ -973,6 +1166,7 @@ class _$LikeImageSuccessImpl implements _LikeImageSuccess {
     required TResult Function() loading,
     required TResult Function(ImageModel model) getImageSuccess,
     required TResult Function(String status) likeImageSuccess,
+    required TResult Function(ImageModel model) searchImageSuccess,
     required TResult Function(String msg) getImageError,
   }) {
     return likeImageSuccess(status);
@@ -985,6 +1179,7 @@ class _$LikeImageSuccessImpl implements _LikeImageSuccess {
     TResult? Function()? loading,
     TResult? Function(ImageModel model)? getImageSuccess,
     TResult? Function(String status)? likeImageSuccess,
+    TResult? Function(ImageModel model)? searchImageSuccess,
     TResult? Function(String msg)? getImageError,
   }) {
     return likeImageSuccess?.call(status);
@@ -997,6 +1192,7 @@ class _$LikeImageSuccessImpl implements _LikeImageSuccess {
     TResult Function()? loading,
     TResult Function(ImageModel model)? getImageSuccess,
     TResult Function(String status)? likeImageSuccess,
+    TResult Function(ImageModel model)? searchImageSuccess,
     TResult Function(String msg)? getImageError,
     required TResult orElse(),
   }) {
@@ -1013,6 +1209,7 @@ class _$LikeImageSuccessImpl implements _LikeImageSuccess {
     required TResult Function(_Loading value) loading,
     required TResult Function(_GetImageSuccess value) getImageSuccess,
     required TResult Function(_LikeImageSuccess value) likeImageSuccess,
+    required TResult Function(_SearchImageSuccess value) searchImageSuccess,
     required TResult Function(_GetImageError value) getImageError,
   }) {
     return likeImageSuccess(this);
@@ -1025,6 +1222,7 @@ class _$LikeImageSuccessImpl implements _LikeImageSuccess {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_GetImageSuccess value)? getImageSuccess,
     TResult? Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult? Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult? Function(_GetImageError value)? getImageError,
   }) {
     return likeImageSuccess?.call(this);
@@ -1037,6 +1235,7 @@ class _$LikeImageSuccessImpl implements _LikeImageSuccess {
     TResult Function(_Loading value)? loading,
     TResult Function(_GetImageSuccess value)? getImageSuccess,
     TResult Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult Function(_GetImageError value)? getImageError,
     required TResult orElse(),
   }) {
@@ -1053,6 +1252,165 @@ abstract class _LikeImageSuccess implements HomeState {
   String get status;
   @JsonKey(ignore: true)
   _$$LikeImageSuccessImplCopyWith<_$LikeImageSuccessImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$SearchImageSuccessImplCopyWith<$Res> {
+  factory _$$SearchImageSuccessImplCopyWith(_$SearchImageSuccessImpl value,
+          $Res Function(_$SearchImageSuccessImpl) then) =
+      __$$SearchImageSuccessImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({ImageModel model});
+}
+
+/// @nodoc
+class __$$SearchImageSuccessImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$SearchImageSuccessImpl>
+    implements _$$SearchImageSuccessImplCopyWith<$Res> {
+  __$$SearchImageSuccessImplCopyWithImpl(_$SearchImageSuccessImpl _value,
+      $Res Function(_$SearchImageSuccessImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? model = null,
+  }) {
+    return _then(_$SearchImageSuccessImpl(
+      null == model
+          ? _value.model
+          : model // ignore: cast_nullable_to_non_nullable
+              as ImageModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SearchImageSuccessImpl implements _SearchImageSuccess {
+  const _$SearchImageSuccessImpl(this.model);
+
+  @override
+  final ImageModel model;
+
+  @override
+  String toString() {
+    return 'HomeState.searchImageSuccess(model: $model)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SearchImageSuccessImpl &&
+            (identical(other.model, model) || other.model == model));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, model);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SearchImageSuccessImplCopyWith<_$SearchImageSuccessImpl> get copyWith =>
+      __$$SearchImageSuccessImplCopyWithImpl<_$SearchImageSuccessImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(ImageModel model) getImageSuccess,
+    required TResult Function(String status) likeImageSuccess,
+    required TResult Function(ImageModel model) searchImageSuccess,
+    required TResult Function(String msg) getImageError,
+  }) {
+    return searchImageSuccess(model);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(ImageModel model)? getImageSuccess,
+    TResult? Function(String status)? likeImageSuccess,
+    TResult? Function(ImageModel model)? searchImageSuccess,
+    TResult? Function(String msg)? getImageError,
+  }) {
+    return searchImageSuccess?.call(model);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(ImageModel model)? getImageSuccess,
+    TResult Function(String status)? likeImageSuccess,
+    TResult Function(ImageModel model)? searchImageSuccess,
+    TResult Function(String msg)? getImageError,
+    required TResult orElse(),
+  }) {
+    if (searchImageSuccess != null) {
+      return searchImageSuccess(model);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_GetImageSuccess value) getImageSuccess,
+    required TResult Function(_LikeImageSuccess value) likeImageSuccess,
+    required TResult Function(_SearchImageSuccess value) searchImageSuccess,
+    required TResult Function(_GetImageError value) getImageError,
+  }) {
+    return searchImageSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_GetImageSuccess value)? getImageSuccess,
+    TResult? Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult? Function(_SearchImageSuccess value)? searchImageSuccess,
+    TResult? Function(_GetImageError value)? getImageError,
+  }) {
+    return searchImageSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_GetImageSuccess value)? getImageSuccess,
+    TResult Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult Function(_SearchImageSuccess value)? searchImageSuccess,
+    TResult Function(_GetImageError value)? getImageError,
+    required TResult orElse(),
+  }) {
+    if (searchImageSuccess != null) {
+      return searchImageSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SearchImageSuccess implements HomeState {
+  const factory _SearchImageSuccess(final ImageModel model) =
+      _$SearchImageSuccessImpl;
+
+  ImageModel get model;
+  @JsonKey(ignore: true)
+  _$$SearchImageSuccessImplCopyWith<_$SearchImageSuccessImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -1124,6 +1482,7 @@ class _$GetImageErrorImpl implements _GetImageError {
     required TResult Function() loading,
     required TResult Function(ImageModel model) getImageSuccess,
     required TResult Function(String status) likeImageSuccess,
+    required TResult Function(ImageModel model) searchImageSuccess,
     required TResult Function(String msg) getImageError,
   }) {
     return getImageError(msg);
@@ -1136,6 +1495,7 @@ class _$GetImageErrorImpl implements _GetImageError {
     TResult? Function()? loading,
     TResult? Function(ImageModel model)? getImageSuccess,
     TResult? Function(String status)? likeImageSuccess,
+    TResult? Function(ImageModel model)? searchImageSuccess,
     TResult? Function(String msg)? getImageError,
   }) {
     return getImageError?.call(msg);
@@ -1148,6 +1508,7 @@ class _$GetImageErrorImpl implements _GetImageError {
     TResult Function()? loading,
     TResult Function(ImageModel model)? getImageSuccess,
     TResult Function(String status)? likeImageSuccess,
+    TResult Function(ImageModel model)? searchImageSuccess,
     TResult Function(String msg)? getImageError,
     required TResult orElse(),
   }) {
@@ -1164,6 +1525,7 @@ class _$GetImageErrorImpl implements _GetImageError {
     required TResult Function(_Loading value) loading,
     required TResult Function(_GetImageSuccess value) getImageSuccess,
     required TResult Function(_LikeImageSuccess value) likeImageSuccess,
+    required TResult Function(_SearchImageSuccess value) searchImageSuccess,
     required TResult Function(_GetImageError value) getImageError,
   }) {
     return getImageError(this);
@@ -1176,6 +1538,7 @@ class _$GetImageErrorImpl implements _GetImageError {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_GetImageSuccess value)? getImageSuccess,
     TResult? Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult? Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult? Function(_GetImageError value)? getImageError,
   }) {
     return getImageError?.call(this);
@@ -1188,6 +1551,7 @@ class _$GetImageErrorImpl implements _GetImageError {
     TResult Function(_Loading value)? loading,
     TResult Function(_GetImageSuccess value)? getImageSuccess,
     TResult Function(_LikeImageSuccess value)? likeImageSuccess,
+    TResult Function(_SearchImageSuccess value)? searchImageSuccess,
     TResult Function(_GetImageError value)? getImageError,
     required TResult orElse(),
   }) {

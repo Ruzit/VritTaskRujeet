@@ -35,4 +35,17 @@ class HomeRepository extends IHomeRepository {
       return left('Exception');
     }
   }
+
+  @override
+  Future<Either<String, ImageModel>> searchImage(String query) async {
+    final response = await client.get(
+      Uri.parse('$imageApiUrl/search?query=$query&per_page=1'),
+      headers: {'Content-Type': 'application/json', 'Authorization': apiKey},
+    );
+    if (response.statusCode == 200) {
+      return right(ImageModel.fromJson(jsonDecode(response.body)));
+    } else {
+      return left('Exception');
+    }
+  }
 }
